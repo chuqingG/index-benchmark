@@ -34,12 +34,12 @@ const std::vector<std::tuple<std::string, uint8_t, Benchmark*>> kIndexStructures
         {"ART (Virt)", 1, new ArtVirtBenchmark()},
         {"ART (CRTP)", 1, new ArtCRTPBenchmark()},
         {"ART (Leis)", 1, new ArtLeisBenchmark()},
-        //{"Trie", 2, new TrieBenchmark()},
-        //{"M-Trie", 2, new MTrieBenchmark()},
-        //{"H-Trie", 2, new HTrieBenchmark()},
-        //{"Sorted List", 1, new SortedListBenchmark()},
-        //{"Hash-Table", 1, new HashTableBenchmark()},
-        //{"RB-Tree", 2, new RbTreeBenchmark()}
+        {"Trie", 2, new TrieBenchmark()},
+        {"M-Trie", 2, new MTrieBenchmark()},
+        {"H-Trie", 2, new HTrieBenchmark()},
+        {"Sorted List", 1, new SortedListBenchmark()},
+        {"Hash-Table", 1, new HashTableBenchmark()},
+        {"RB-Tree", 2, new RbTreeBenchmark()}
 };
 
 constexpr uint32_t kDefaultIterations{3};
